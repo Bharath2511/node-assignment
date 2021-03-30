@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Test</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        </head>
+    <body>
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-12">
+                    <a href="/index" class="btn btn-primary m-3">Create New</a>
+                </div>
+            </div>
+            <div class="row">          
+                        <% data.forEach(function(d){ %>
+                            <div class="col-12 col-md-6">
+                            <div class="bg-info m-3 rounded p-4 text-white">
+                            <p>uid Number</p>
+                            <p><%= d.uidNumber %></p>
+                            <p>Serial Number</p>
+                            <p><%= d.serialNumber %></p>
+                            <p>Value Type</p>
+                            <p><%= d.valueType %></p>
+                            <p>Scan Type</p>
+                            <p><%= d.scanType %></p>
+                            <p>Scan Value</p>
+                            <p><%= d.scanValue %></p>
+                            <p>Actual Value</p>
+                            <p><%= d.actualValue %></p>
+                            <p>Reading Value</p>
+                            <p><%= d.readingValue %></p>
+                            <p>Abnormality Status</p>
+                            <p><%= d.abnormalityStatus %></p>
+                            <img src="<%= d.smallImage %>" class="p-3 w-25"/>
+                            <img src="<%= d.bigImage %>" class="p-3 w-25"/>
+                            <p>Latitude</p>
+                            <p><%= d.latitude %></p>
+                            <p>Longitude</p>
+                            <p><%= d.longitude %></p>
+                            <p>Created At</p>
+                            <p><%= d.createdAt %></p>
+                        </div>
+                    </div>
+                        <% }); %>
+            
+            </div>     
+        </div>
+    </body>
+</html>

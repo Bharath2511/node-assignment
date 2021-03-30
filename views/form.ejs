@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Test</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        </head>
+    <body>
+    </body>
+        <div class="container-fluid bg-primary text-white">
+            <div class="row p-5">
+                <div class="col-12">
+                    <h1 class="text-center mb-5">Please fill the form below.</h1>
+                </div>
+                <form action="/data" method="POST" class="col-12 col-md-6 ml-auto mr-auto">
+                    <div class="mb-4">
+                        <!-- <label for="uidNumber">uid Number</label> -->
+                        <input type="number" id="uidNumber" name="uidNumber" class="form-control" placeholder="enter uid number"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="serialNumber">Serial Number</label>
+                        <input type="number" id="serialNumber" name="serialNumber" class="form-control" placeholder="enter serial number"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="valueType">Value Type</label>
+                        <input type="text" id="valueType" name="valueType" class="form-control" placeholder="enter value type"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="scanType">Scan Type</label>
+                        <input type="text" id="scanType" name="scanType" class="form-control" placeholder="enter scan type"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="scanValue">Scan Value</label>
+                        <input type="number" id="scanValue" name="scanValue" class="form-control" placeholder="enter scan value"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="actualValue">Actual Value</label>
+                        <input type="number" id="actualValue" name="actualValue" class="form-control" placeholder="enter actual value"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="readingValue">Reading Value</label>
+                        <input type="number" id="readingValue" name="readingValue" class="form-control" placeholder="enter reading value"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="abnormalityStatus">Abnormality Status</label>
+                        <input type="text" id="abnormalityStatus" name="abnormalityStatus" class="form-control" placeholder="enter abnormality status"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="latitude">Latitude</label>
+                        <input type="number" id="latitude" name="latitude" class="form-control" placeholder="enter latitude"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="longitude">Longitude</label>
+                        <input type="number" id="longitude" name="longitude" class="form-control" placeholder="enter longitude"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="smallImage">Small Image</label>
+                        <input type="text" id="smallImage" name="smallImage" class="form-control" placeholder="enter small image url"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="bigImage">Big Image</label>
+                        <input type="text" id="bigImage" name="bigImage" class="form-control" placeholder="enter big image url"/>
+                    </div>
+                    <div class="mb-4">
+                        <label for="createdAt">Created At</label>
+                        <input type="date" id="createdAt" name="createdAt" class="form-control" placeholder="optional"/>
+                    </div>
+                    <div class="text-center">
+                        <button class="text-white btn btn-transparent border-white mr-2">Submit</button>
+                        <a href="/" class="text-white btn btn-danger">Home Page</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <body>
